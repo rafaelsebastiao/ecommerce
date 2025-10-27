@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0px;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body{
+    background-color: #F0F0F2;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#logo{
+    width: 330px;
+    height: 155px;
+    /* border:solid; */
+}
+
+#external-links{
+    margin-top:15px;
+
+}
+#external-links>a{
+    margin:20px;
+
+}
+
+#main-links{
+    /* display: flex; */
+    /* border:solid; */
+    display:flex;
+    align-items: flex-start;
+
+}
+
+#search-area{
+    /* border:solid; */
+    width:300px;
+    height:25px;
+    display: flex;
+    margin:auto;
+    margin-top:50px;
+    margin-left:80px;
+}
+
+
+#search-icon{
+    /* margin-top:5px; */
+    height:51px;
+    width:50px;
+    border-radius: 5px;
+    
+}
+
+
+#searchInput{
+    margin-right:0px;
+    width:300px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right:-10px;
+
+    
+    /* border:solid; */
+}
+
+#shop-cart{
+    width: 200px;
+    /* border: solid; */
+    /* margin-right:800px; */
+    margin-right:100vh;
+}
+
+button{
+    cursor:pointer;
+}
+
+#btn-login{
+    background-color:#04ADBF;
+    color: white;
+    font-weight: bolder;
+    font-size:1.3em;
+    border-radius:3px;
+    border:none;
+    margin-top:50px;
+    width:200px;
+    height:50px;
+
+}
+
+
+
+main{
+    background-color: #F2DB66;
+}
+footer{
+    background-color: #686673;
+}
