@@ -13,7 +13,6 @@ a{
     text-decoration: none;
 }
 
-
 #logo{
     width: 330px;
     height: 155px;
@@ -33,18 +32,22 @@ a{
     /* display: flex; */
     /* border:solid; */
     display:flex;
-    align-items: flex-start;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
 
 }
 
+
 #search-area{
-    /* border:solid; */
     width:300px;
     height:25px;
     display: flex;
-    margin:auto;
+    /* margin:auto; */
     margin-top:50px;
-    margin-left:80px;
+    /* margin-left:80px; */
+
+    /* border:solid; */
 }
 
 
@@ -72,7 +75,6 @@ a{
     width: 200px;
     /* border: solid; */
     /* margin-right:800px; */
-    margin-right:100vh;
 }
 
 button{
