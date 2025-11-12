@@ -9,6 +9,9 @@ body{
     background-color: #F0F0F2;
 }
 
+header{
+}
+
 a{
     text-decoration: none;
 }
@@ -81,7 +84,7 @@ button{
     cursor:pointer;
 }
 
-#btn-login{
+#loginLink{
     background-color:#04ADBF;
     color: white;
     font-weight: bolder;
@@ -91,14 +94,67 @@ button{
     margin-top:50px;
     width:200px;
     height:50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-
 
 
 main{
     background-color: #F2DB66;
+    padding-top:50px;
+    height:90vh;
+    padding-left:50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 footer{
     background-color: #686673;
+    height:10vh;
+    text-align: center;
+    color:white;
+}
+
+
+.card{
+    padding-left: 30px;
+    background-color: white;
+    
+    width:248px;
+    height:280px;   
+    
+    border-radius:10px;
+
+}
+
+
+#categoricLinks{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+
+.categoryLink{
+    /* border:solid; */
+    background-color: white;
+    width:108px;
+    height: 108px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border:solid;
+    margin-bottom:50px;
+
+
+}
+
+.linkCartProduct{
+    background-color: #04ADBF;
+    color: white;
 }
