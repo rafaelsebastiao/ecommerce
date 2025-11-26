@@ -1,118 +1,425 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nerdasso</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Nerdasso.com - Sua Loja Geek</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav id="external-links">
-            <a href="">Produtos</a>
-            <a href="">Contatos</a>
-            <a href="">Sobre nós</a>
+        <img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt="">
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
-        <hr>
-        <nav id="main-links">
-            <img id="logo"src="../assets/img/logo-nerdasso-removebg-preview.png" alt="">
-            <div id="search-area">
-                <input type="text" placeholder="Pesquisar" id="searchInput" />
-                <img src="../assets/img/search-icon.png" alt=""width="50" id="search-icon">
-            </div>
-            <img id="shop-cart" src="../assets/img/shopp-cart-icon.png" alt="" />
-
-            <a id="loginLink">Login</a>
-        </nav>
-
-        <nav id="categoricLinks">
-            <div class="categoryLink">
-                <img src="../assets/img/images-categories-link/t-shirt.PNG" alt="" width="80" />
-                <a href="">Camisetas</a>
-            </div>
-           
-            <div class="categoryLink">
-                <img src="../assets/img/images-categories-link/caneca.PNG" alt="" width="80" />
-                <a href="">Canecas</a>
-            </div>
-            
-            <div class="categoryLink">
-                <img src="../assets/img/images-categories-link/funko-pop.PNG" alt="" width="80" />
-                <a href="">Funko Pops</a>
-            </div>
-            
-            <div class="categoryLink">
-                <img src="../assets/img/images-categories-link/action-figure.PNG" alt="" width="80" />
-                <a href="">Action Figures</a>
-            </div>
-            <div class="categoryLink">
-                <img src="../assets/img/images-categories-link/chaveiro.PNG" alt="" width="80" />
-                <a href="">Chaveiros</a>
-            </div>
+        <nav class="user-actions">
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="#carrinho" class="btn btn-secondary">Carrinho (0)</a>
         </nav>
     </header>
+
     <main>
-        <article class="card">
+        <section id="home">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar produtos...">
+                <button>Buscar</button>
+            </div>
 
-            <!-- <h2>Produto 1</h2> -->
+            <div class="banner">
+                <h2>Lançamentos Exclusivos!</h2>
+                <p>Confira os novos produtos da cultura geek que acabaram de chegar!</p>
+            </div>
 
-            <img src="../assets/img/products/spiderman.PNG" width="200"alt="" />
-            <p>Chaveiro Homem-Aranha: Sem Volta Para Casa</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct"href="">Carrinho</a>
-        </article>
-        
-        <article class="card">
-            <img src="../assets/img/products/obi-wan.PNG" width="200"alt="" />
-            <p>Caneca Star Wars - Obi Wan Kenobi</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" href="">Carrinho</a>
-        </article>
-      
-        <article class="card">
-            <img src="../assets/img/products/harry-potter.PNG" width="200"alt="" />
-            <p>Funko Pop Harry Potter</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" href="">Carrinho</a>
-        </article>
-     
-        <article class="card">
-            <img src="../assets/img/products/batman.PNG" width="200"alt="" />
-            <p>Action Figure - Batman e a Motocicleta Bat-Pod</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" href="">Carrinho</a>
-        </article>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Categoria</label>
+                    <select id="categoryFilter">
+                        <option value="all">Todas as categorias</option>
+                        <option value="camiseta">Camisetas</option>
+                        <option value="livro">Livros</option>
+                        <option value="brinquedo">Brinquedos</option>
+                        <option value="acessorio">Acessórios</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sagaFilter">Saga</label>
+                    <select id="sagaFilter">
+                        <option value="all">Todas as sagas</option>
+                        <option value="star-wars">Star Wars</option>
+                        <option value="harry-potter">Harry Potter</option>
+                        <option value="marvel">Marvel</option>
+                        <option value="dc">DC Comics</option>
+                        <option value="anime">Anime</option>
+                    </select>
+                </div>
+            </div>
 
-        <article class="card">
-            <img src="../assets/img/products/darth-vader.PNG" width="200"alt="" />
-            <p>Chaveiro Homem-Aranha: Sem Volta Para Casa</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" href="">Carrinho</a>
-        </article>
-        <article class="card">
-            <img src="../assets/img/products/hubeo-hagrid.PNG" width="200"alt="" />
-            <p>Chaveiro Homem-Aranha: Sem Volta Para Casa</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" href="">Carrinho</a>
-        </article>
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <img src="../assets/img/products/spiderman.PNG" alt="" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Chaveiro Homem aranha sem volta pra casa</h3>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
 
-        <article class="card">
-            <img src="../assets/img/products/the-last-of-us.PNG" width="200"alt="" />
-            <p>Caneca The Last Of Us</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" href="">Carrinho</a>
-        </article>
-        <article class="card">
-            <img src="../assets/img/products/thor-vs-loke.PNG" width="150" alt="" />
-            <p>Chaveiro Homem-Aranha: Sem Volta Para Casa</p>
-            <p><strong>R$ 30,45</strong></p>
-            <a class="linkCartProduct" >Carrinho</a>
-        </article>
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Livro+Harry+Potter" alt="Livro Harry Potter e a Pedra Filosofal" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Livro Harry Potter e a Pedra Filosofal</h3>
+                        <div class="product-price">R$ 39,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Action+Figure+Homem+de+Ferro" alt="Action Figure Homem de Ferro" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Action Figure Homem de Ferro</h3>
+                        <div class="product-price">R$ 89,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Caneca+Super+Mario" alt="Caneca Super Mario" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Caneca Super Mario</h3>
+                        <div class="product-price">R$ 29,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Camiseta+Capitão+América" alt="Camiseta Capitão América" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Capitão América</h3>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Livro+Senhor+dos+Anéis" alt="Livro O Senhor dos Anéis" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Livro O Senhor dos Anéis</h3>
+                        <div class="product-price">R$ 45,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 7 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Funko+Pop+Batman" alt="Funko Pop Batman" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Funko Pop Batman</h3>
+                        <div class="product-price">R$ 79,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 8 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Chaveiro+Harry+Potter" alt="Chaveiro Harry Potter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Chaveiro Harry Potter</h3>
+                        <div class="product-price">R$ 19,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 9 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Camiseta+Mulher+Maravilha" alt="Camiseta Mulher Maravilha" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Mulher Maravilha</h3>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 10 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Livro+Star+Wars" alt="Livro Star Wars: Ascensão Skywalker" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Livro Star Wars: Ascensão Skywalker</h3>
+                        <div class="product-price">R$ 42,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 11 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Lego+Millennium+Falcon" alt="Lego Millennium Falcon" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Lego Millennium Falcon</h3>
+                        <div class="product-price">R$ 299,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 12 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Mochila+Dragon+Ball+Z" alt="Mochila Dragon Ball Z" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Mochila Dragon Ball Z</h3>
+                        <div class="product-price">R$ 89,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 13 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Camiseta+Homem-Aranha" alt="Camiseta Homem-Aranha" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Homem-Aranha</h3>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 14 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Livro+Crônicas+de+Nárnia" alt="Livro As Crônicas de Nárnia" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Livro As Crônicas de Nárnia</h3>
+                        <div class="product-price">R$ 38,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 15 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Quebra-Cabeça+Star+Wars" alt="Quebra-Cabeça Star Wars" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Quebra-Cabeça Star Wars</h3>
+                        <div class="product-price">R$ 59,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 16 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Boné+Nintendo" alt="Boné Nintendo" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Boné Nintendo</h3>
+                        <div class="product-price">R$ 39,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 17 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Camiseta+Super+Mario" alt="Camiseta Super Mario" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Super Mario</h3>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 18 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Livro+Batman+Ano+Um" alt="Livro Batman: Ano Um" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Livro Batman: Ano Um</h3>
+                        <div class="product-price">R$ 44,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 19 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Action+Figure+Wonder+Woman" alt="Action Figure Wonder Woman" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Action Figure Wonder Woman</h3>
+                        <div class="product-price">R$ 89,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 20 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Pôster+Avengers" alt="Pôster Avengers" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Pôster Avengers</h3>
+                        <div class="product-price">R$ 24,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Seção Sobre Nós -->
+        <section id="sobre" class="about-section">
+            <h2>Sobre a Nerdasso.com</h2>
+            <p>Bem-vindo à Nerdasso.com, sua loja geek favorita! Fundada em 2020, nossa missão é oferecer os melhores produtos da cultura nerd para todos os fãs.</p>
+            <p>Nossa equipe é formada por apaixonados por filmes, séries, quadrinhos, games e tudo que envolve o universo geek. Selecionamos cuidadosamente cada produto para garantir qualidade e autenticidade.</p>
+            <p>Trabalhamos com as melhores marcas e fornecedores para trazer até você camisetas, livros, action figures, acessórios e muito mais com as suas sagas favoritas.</p>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="contact-section">
+            <h2>Entre em Contato</h2>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Endereço</h3>
+                    <p>Rua Geek, 123<br>Bairro Nerd<br>São Paulo - SP<br>CEP: 01234-567</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Telefone</h3>
+                    <p>(11) 9999-9999</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>contato@nerdasso.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Horário de Atendimento</h3>
+                    <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Envie uma Mensagem</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Nome</label>
+                            <input type="text" id="contactName" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" placeholder="Seu email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactSubject">Assunto</label>
+                        <input type="text" id="contactSubject" placeholder="Assunto da mensagem">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Mensagem</label>
+                        <textarea id="contactMessage" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="auth-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <nav>
-            <h1>Footer</h1>
-        </nav>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nerdasso.com</h3>
+                <p>Sua loja geek favorita com os melhores produtos da cultura nerd.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Livros</a></li>
+                    <li><a href="#">Brinquedos</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li>Email: contato@nerdasso.com</li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>

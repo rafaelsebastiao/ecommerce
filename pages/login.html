@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - Nerdasso.com</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <style>
+        
+    </style>
 </head>
 <body>
-    
+    <header>
+        <img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="index.html" class="btn btn-secondary">Voltar à Loja</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-banner">
+                <h2>Bem-vindo de volta!</h2>
+                <p>Faça login em sua conta para acessar ofertas exclusivas, acompanhar seus pedidos e salvar seus produtos favoritos.</p>
+                <p>Se você ainda não tem uma conta, cadastre-se agora mesmo e ganhe 10% de desconto na primeira compra!</p>
+            </div>
+            
+            <div class="auth-box">
+                <input type="radio" name="auth-tab" id="login-tab" checked>
+                <input type="radio" name="auth-tab" id="register-tab">
+                
+                <div class="auth-tabs">
+                    <label for="login-tab" class="auth-tab">Login</label>
+                    <label for="register-tab" class="auth-tab">Cadastro</label>
+                </div>
+                
+                <div id="login-content" class="auth-content active">
+                    <form action="index.html" method="get">
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Senha</label>
+                            <input type="password" id="loginPassword" placeholder="Sua senha" required>
+                        </div>
+                        <button type="submit" class="auth-submit">Entrar</button>
+                    </form>
+                    <div class="auth-links">
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+                </div>
+                
+                <div id="register-content" class="auth-content">
+                    <form action="index.html" method="get">
+                        <div class="form-group">
+                            <label for="registerName">Nome Completo</label>
+                            <input type="text" id="registerName" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">Email</label>
+                            <input type="email" id="registerEmail" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Senha</label>
+                            <input type="password" id="registerPassword" placeholder="Crie uma senha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerConfirmPassword">Confirmar Senha</label>
+                            <input type="password" id="registerConfirmPassword" placeholder="Confirme sua senha" required>
+                        </div>
+                        <button type="submit" class="auth-submit">Cadastrar</button>
+                    </form>
+                    <div class="auth-links">
+                        <p>Ao se cadastrar, você concorda com nossos <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nerdasso.com</h3>
+                <p>Sua loja geek favorita com os melhores produtos da cultura nerd.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="index.html">Camisetas</a></li>
+                    <li><a href="index.html">Livros</a></li>
+                    <li><a href="index.html">Brinquedos</a></li>
+                    <li><a href="index.html">Acessórios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html#sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li>Email: contato@nerdasso.com</li>
+                    <li>Telefone: (11) 9999-9999</li>
+                    <li>Horário: Seg-Sex, 9h-18h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nerdasso.com - Todos os direitos reservados.
+        </div>
+    </footer>
 </body>
 </html>
