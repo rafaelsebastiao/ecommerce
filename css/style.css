@@ -15,7 +15,10 @@
             --main-background: #F2C063;
         }
 
-       
+        #sobre{
+            background-color: var(--background-color);
+            border-radius: 8px;
+        }
 
         /* Reset e estilos base */
         * {
@@ -32,6 +35,7 @@
         }
 
         main{
+            margin-top:-20px;
             background-color: var(--main-background);
         }
         /* Cabeçalho */
@@ -82,6 +86,8 @@
         .user-actions {
             display: flex;
             align-items: center;
+            gap: 15px;
+
         }
 
         .theme-toggle {
@@ -322,6 +328,8 @@
             background-color: var(--footer-bg);
             color: var(--footer-text);
             padding: 40px 5%;
+
+            margin-top:-20px;
         }
 
         .footer-content {
@@ -363,7 +371,11 @@
         .about-section {
             padding: 40px 5%;
             max-width: 1000px;
-            margin: 0 auto;
+            
+            margin: 0;
+
+            margin-left:95px;
+            
         }
 
         .about-section h2 {

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Nerdasso.com</title>
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="index.html" class="btn btn-secondary">Voltar à Loja</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para ajudar! Entre em contato conosco para tirar suas dúvidas</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Endereço</h3>
+                    <p>Rua Geek, 123<br>Bairro Nerd<br>São Paulo - SP<br>CEP: 01234-567</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Telefone</h3>
+                    <p>(11) 9999-9999<br>(11) 8888-8888</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>contato@nerdasso.com<br>vendas@nerdasso.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Horário de Atendimento</h3>
+                    <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h<br>Domingo: Fechado</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h2>Envie uma Mensagem</h2>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="duvida">Dúvida sobre produtos</option>
+                                <option value="pedido">Status do pedido</option>
+                                <option value="troca">Troca ou devolução</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="faq-section">
+                <h2>Perguntas Frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como faço para rastrear meu pedido?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Após a confirmação do pagamento, você receberá um email com o código de rastreamento. Você também pode acessar sua conta no site para acompanhar o status do pedido.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual o prazo de entrega?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo de entrega varia de 3 a 10 dias úteis, dependendo da sua localização. Para a região metropolitana de São Paulo, o prazo é de 3-5 dias úteis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual a política de trocas e devoluções?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos trocas e devoluções em até 7 dias após o recebimento do produto, desde que esteja em perfeitas condições com todas as etiquetas e embalagens originais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Vocês enviam para todo o Brasil?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, enviamos para todo o território nacional. O frete é calculado automaticamente no checkout de acordo com o CEP informado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nerdasso.com</h3>
+                <p>Sua loja geek favorita com os melhores produtos da cultura nerd.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="produtos.html">Camisetas</a></li>
+                    <li><a href="produtos.html">Livros</a></li>
+                    <li><a href="produtos.html">Brinquedos</a></li>
+                    <li><a href="produtos.html">Acessórios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li>Email: contato@nerdasso.com</li>
+                    <li>Telefone: (11) 9999-9999</li>
+                    <li>Horário: Seg-Sex, 9h-18h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nerdasso.com - Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>

@@ -8,13 +8,12 @@
 </head>
 <body>
     <header>
-        <img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt="">
+    <a href="index.html" class="logo"><img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt=""></a>
         <nav>
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
                 <li><a href="./sobre.html">Sobre Nós</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
         <nav class="user-actions">
@@ -24,7 +23,6 @@
     </header>
 
     <main>
-        <section id="home">
             <div class="search-bar">
                 <input type="text" placeholder="Pesquisar produtos...">
                 <button>Buscar</button>
@@ -58,8 +56,16 @@
                     </select>
                 </div>
             </div>
+            
+        <!-- Seção Sobre Nós -->
+        <section id="sobre" class="about-section">
+            <h2>Sobre a Nerdasso.com</h2>
+            <p>Bem-vindo à Nerdasso.com, sua loja geek favorita! Fundada em 2020, nossa missão é oferecer os melhores produtos da cultura nerd para todos os fãs.</p>
+            <p>Nossa equipe é formada por apaixonados por filmes, séries, quadrinhos, games e tudo que envolve o universo geek. Selecionamos cuidadosamente cada produto para garantir qualidade e autenticidade.</p>
+            <p>Trabalhamos com as melhores marcas e fornecedores para trazer até você camisetas, livros, action figures, acessórios e muito mais com as suas sagas favoritas.</p>
+        </section>
 
-            <div class="products-grid">
+        <div class="products-grid">
                 <!-- Produto 1 -->
                 <div class="product-card">
                     <img src="../assets/img/products/spiderman.PNG" alt="" class="product-image">
@@ -320,74 +326,8 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-       
-
-        <!-- Seção Sobre Nós -->
-        <section id="sobre" class="about-section">
-            <h2>Sobre a Nerdasso.com</h2>
-            <p>Bem-vindo à Nerdasso.com, sua loja geek favorita! Fundada em 2020, nossa missão é oferecer os melhores produtos da cultura nerd para todos os fãs.</p>
-            <p>Nossa equipe é formada por apaixonados por filmes, séries, quadrinhos, games e tudo que envolve o universo geek. Selecionamos cuidadosamente cada produto para garantir qualidade e autenticidade.</p>
-            <p>Trabalhamos com as melhores marcas e fornecedores para trazer até você camisetas, livros, action figures, acessórios e muito mais com as suas sagas favoritas.</p>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contato" class="contact-section">
-            <h2>Entre em Contato</h2>
-            
-            <div class="contact-info">
-                <div class="contact-card">
-                    <h3>Endereço</h3>
-                    <p>Rua Geek, 123<br>Bairro Nerd<br>São Paulo - SP<br>CEP: 01234-567</p>
-                </div>
-                
-                <div class="contact-card">
-                    <h3>Telefone</h3>
-                    <p>(11) 9999-9999</p>
-                </div>
-                
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>contato@nerdasso.com</p>
-                </div>
-                
-                <div class="contact-card">
-                    <h3>Horário de Atendimento</h3>
-                    <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <h3>Envie uma Mensagem</h3>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contactName">Nome</label>
-                            <input type="text" id="contactName" placeholder="Seu nome">
-                        </div>
-                        <div class="form-group">
-                            <label for="contactEmail">Email</label>
-                            <input type="email" id="contactEmail" placeholder="Seu email">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="contactSubject">Assunto</label>
-                        <input type="text" id="contactSubject" placeholder="Assunto da mensagem">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="contactMessage">Mensagem</label>
-                        <textarea id="contactMessage" placeholder="Sua mensagem"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="auth-submit">Enviar Mensagem</button>
-                </form>
-            </div>
-        </section>
     </main>
-
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -420,6 +360,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
