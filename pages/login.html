@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Nerdasso.com</title>
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/login.css" />
 </head>
 <body>
     <header>
-     <a href="index.html" class="logo"><img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt=""></a>
+        <a href="index.html" class="logo">
+            <img src="../assets/img/logo-nerdasso-removebg-preview.png" width="300" alt="Logo Nerdasso.com" />
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,73 +25,75 @@
 
     <main>
         <div class="auth-container">
-            <div class="auth-banner">
+            <section class="auth-banner">
                 <h2>Bem-vindo de volta!</h2>
                 <p>Faça login em sua conta para acessar ofertas exclusivas, acompanhar seus pedidos e salvar seus produtos favoritos.</p>
                 <p>Se você ainda não tem uma conta, cadastre-se agora mesmo e ganhe 10% de desconto na primeira compra!</p>
-            </div>
+            </section>
             
             <div class="auth-box">
-                <input type="radio" name="auth-tab" id="login-tab" checked>
-                <input type="radio" name="auth-tab" id="register-tab">
+                <input type="radio" name="auth-tab" id="login-tab" checked="checked" />
+                <input type="radio" name="auth-tab" id="register-tab" />
                 
                 <div class="auth-tabs">
                     <label for="login-tab" class="auth-tab">Login</label>
                     <label for="register-tab" class="auth-tab">Cadastro</label>
                 </div>
                 
-                <div id="login-content" class="auth-content active">
+                <section id="login-content" class="auth-content active">
+                    <h3 class="visually-hidden">Login</h3>
                     <form action="index.html" method="get">
                         <div class="form-group">
                             <label for="loginEmail">Email</label>
-                            <input type="email" id="loginEmail" placeholder="Seu email" required>
+                            <input type="email" id="loginEmail" placeholder="Seu email" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="loginPassword">Senha</label>
-                            <input type="password" id="loginPassword" placeholder="Sua senha" required>
+                            <input type="password" id="loginPassword" placeholder="Sua senha" required="required" />
                         </div>
                         <button type="submit" class="auth-submit">Entrar</button>
                     </form>
                     <div class="auth-links">
                         <a href="#">Esqueci minha senha</a>
                     </div>
-                </div>
+                </section>
                 
-                <div id="register-content" class="auth-content">
+                <section id="register-content" class="auth-content">
+                    <h3 class="visually-hidden">Cadastro</h3>
                     <form action="index.html" method="get">
                         <div class="form-group">
                             <label for="registerName">Nome Completo</label>
-                            <input type="text" id="registerName" placeholder="Seu nome completo" required>
+                            <input type="text" id="registerName" placeholder="Seu nome completo" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="registerEmail">Email</label>
-                            <input type="email" id="registerEmail" placeholder="Seu email" required>
+                            <input type="email" id="registerEmail" placeholder="Seu email" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="registerPassword">Senha</label>
-                            <input type="password" id="registerPassword" placeholder="Crie uma senha" required>
+                            <input type="password" id="registerPassword" placeholder="Crie uma senha" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="registerConfirmPassword">Confirmar Senha</label>
-                            <input type="password" id="registerConfirmPassword" placeholder="Confirme sua senha" required>
+                            <input type="password" id="registerConfirmPassword" placeholder="Confirme sua senha" required="required" />
                         </div>
                         <button type="submit" class="auth-submit">Cadastrar</button>
                     </form>
                     <div class="auth-links">
                         <p>Ao se cadastrar, você concorda com nossos <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.</p>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
+            <section class="footer-section">
                 <h3>Nerdasso.com</h3>
                 <p>Sua loja geek favorita com os melhores produtos da cultura nerd.</p>
-            </div>
-            <div class="footer-section">
+            </section>
+            <section class="footer-section">
                 <h3>Categorias</h3>
                 <ul>
                     <li><a href="index.html">Camisetas</a></li>
@@ -97,8 +101,8 @@
                     <li><a href="index.html">Brinquedos</a></li>
                     <li><a href="index.html">Acessórios</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
+            </section>
+            <section class="footer-section">
                 <h3>Links Úteis</h3>
                 <ul>
                     <li><a href="index.html#sobre">Sobre Nós</a></li>
@@ -106,15 +110,17 @@
                     <li><a href="#">Política de Privacidade</a></li>
                     <li><a href="#">Termos de Uso</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
+            </section>
+            <section class="footer-section">
                 <h3>Atendimento</h3>
-                <ul>
-                    <li>Email: contato@nerdasso.com</li>
-                    <li>Telefone: (11) 9999-9999</li>
-                    <li>Horário: Seg-Sex, 9h-18h</li>
-                </ul>
-            </div>
+                <address>
+                    <ul>
+                        <li>Email: <a href="mailto:contato@nerdasso.com">contato@nerdasso.com</a></li>
+                        <li>Telefone: <a href="tel:11999999999">(11) 9999-9999</a></li>
+                        <li>Horário: Seg-Sex, 9h-18h</li>
+                    </ul>
+                </address>
+            </section>
         </div>
         <div class="copyright">
             &copy; 2025 Nerdasso.com - Todos os direitos reservados.
