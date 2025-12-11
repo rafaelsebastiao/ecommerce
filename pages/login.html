@@ -32,34 +32,14 @@
             </section>
             
             <div class="auth-box">
-                <input type="radio" name="auth-tab" id="login-tab" checked="checked" />
-                <input type="radio" name="auth-tab" id="register-tab" />
+                <input type="radio" name="auth-tab" id="login-tab" />
+                <input type="radio" name="auth-tab" id="register-tab" checked="checked" />
                 
                 <div class="auth-tabs">
                     <label for="login-tab" class="auth-tab">Login</label>
                     <label for="register-tab" class="auth-tab">Cadastro</label>
                 </div>
-                
-                <section id="login-content" class="auth-content active">
-                    <h3 class="visually-hidden">Login</h3>
-                    <form action="index.html" method="get">
-                        <div class="form-group">
-                            <label for="loginEmail">Email</label>
-                            <input type="email" id="loginEmail" placeholder="Seu email" required="required" />
-                        </div>
-                        <div class="form-group">
-                            <label for="loginPassword">Senha</label>
-                            <input type="password" id="loginPassword" placeholder="Sua senha" required="required" />
-                        </div>
-                        <button type="submit" class="auth-submit">Entrar</button>
-                    </form>
-                    <div class="auth-links">
-                        <a href="#">Esqueci minha senha</a>
-                    </div>
-                </section>
-                
                 <section id="register-content" class="auth-content">
-                    <h3 class="visually-hidden">Cadastro</h3>
                     <form action="index.html" method="get">
                         <div class="form-group">
                             <label for="registerName">Nome Completo</label>
@@ -77,12 +57,30 @@
                             <label for="registerConfirmPassword">Confirmar Senha</label>
                             <input type="password" id="registerConfirmPassword" placeholder="Confirme sua senha" required="required" />
                         </div>
-                        <button type="submit" class="auth-submit">Cadastrar</button>
+                        <button type="submit" class="auth-submit">Cadastrar</button>    
                     </form>
                     <div class="auth-links">
                         <p>Ao se cadastrar, você concorda com nossos <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.</p>
                     </div>
                 </section>
+                
+                <section id="login-content" class="auth-content active">
+                    <form action="index.html" method="get">
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" placeholder="Seu email" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Senha</label>
+                            <input type="password" id="loginPassword" placeholder="Sua senha" required="required" />
+                        </div>
+                        <button type="submit" class="auth-submit">Entrar</button>
+                    </form>
+                    <div class="auth-links">
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+                </section>
+                
             </div>
         </div>
     </main>

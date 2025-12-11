@@ -9,9 +9,9 @@
     --footer-text: #ffffff;
     --border-color: #e0e0e0;
 
-
     --main-background:#F2C063;
 }
+
 
 * {
     margin: 0;
@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 
 
 header {

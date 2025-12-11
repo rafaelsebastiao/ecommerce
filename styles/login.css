@@ -263,7 +263,6 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Estilos para o sistema de abas sem JavaScript */
 #login-tab:checked ~ .auth-content#login-content,
 #register-tab:checked ~ .auth-content#register-content {
     display: block;
